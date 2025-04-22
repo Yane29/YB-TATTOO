@@ -208,11 +208,40 @@ h3 {
 .clase{
     margin: 30px;
 }
-
+.body_piercing{
+    display: flex;
+}
+.body_piercing img{
+    width: 50%;
+}
+.piercingright{
+    width: 50%;
+}
+.temarioleft{
+    width: 50%;
+    text-align: left;
+}
 
 /***MAIN INSUMOS***/
+.insumos p{
+    text-align: center;
+}
+.insumos img{
+    width: 25%;
+    align-items: center;
+    justify-content: space-between
+}
 
-
+.insumos_tatuadores{
+    display: flex;
+    margin-top: 5%;  
+}
+.insumos_tatuadores ul{
+    border: 2px solid #660708;
+}
+.insumos_tatuadores li{
+    text-align: right;
+}
 /**FOOTER**/
 
 footer {
