@@ -29,12 +29,7 @@ body {
     color: var(--main-text-color)
 }
 
-
 /****HEADER****/
-
-header nav {
-    text-align: right;
-}
 
 header {
     background-image: url('/Img/fondos/fondoheader.jpg');
@@ -42,15 +37,20 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 55vh;
+    height: 50vh;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+header nav ul li {
+    margin: 20px;
 }
 
 a {
     color: var(--main-text-color)
-}
-
-ul {
-    list-style: none;
 }
 
 h1 {
@@ -62,13 +62,38 @@ h1 {
     color: var(--main-color-secondary);
 }
 
-/***MAIN***/
+/***MAIN HOME***/
+#nuestro_estudio {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0% 10px;
+}
+
+#nuestro_estudio img {
+    width: 49%;
+}
+
+.parrafo-estudioLeft {
+    width: 50%;
+    text-align: left;
+}
+
+.estudiofRight {
+    width: 50%;
+}
+
+.parrafo-estudio {
+    text-align: left;
+    padding: 0% 10px;
+}
 
 h2 {
     color: #660708;
     font-size: 35px;
     text-align: center;
     text-decoration: underline;
+    margin: 15px;
 }
 
 h3 {
@@ -78,37 +103,123 @@ h3 {
     text-decoration: underline;
 }
 
-#nuestro_estudio p {
+#nuestro_estudio div {
+    display: flex;
+    align-items: center;
+    padding: 0% 10px;
+}
+
+#equipo {
+    display: flex;
+    margin-top: 5%;
+}
+
+.equipof img {
+    width: 90%;
+    align-items: center;
+    justify-content: space-between
+}
+
+.equipof p {
+    font-weight: 450;
+    font-style: normal;
+    font-size: 17px;
+    text-align: center;
+}
+
+#testimonios {
+    padding: 0% 10px;
+    font-style: italic;
+    margin: 15px;
+}
+
+#testimonios p {
+    margin: 15px;
+}
+
+#formulario form {
+    text-align: center;
+}
+
+/***MAIN GALERIA***/
+
+#galeria {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitulo {
     text-align: left;
 }
 
-#etudiof div{
-    
+#ftatuajes {
+    padding: 0% 10px;
 }
 
-#estudio .equipo{
+#ftatuajes img {
+    padding: 0% 10px;
+    width: 30%;
+    align-items: center;
+    justify-content: space-between
+}
 
+#fperforaciones {
+    padding: 0% 10px;
+}
+
+#fperforaciones img {
+    padding: 0% 10px;
+    width: 30%;
+    align-items: center;
+    justify-content: space-between
+}
+
+/***MAIN CURSOS***/
+#nuestros_cursos {
+    padding: 0% 10px;
+}
+
+.tatuajesdescripcion {
+    display: flex;
+    align-items: left;
+    padding: 0% 10px;
+}
+
+.cursotattoo {
+    width: 50%;
+    text-align: left;
+}
+
+.cursotattooimg {
+    width: 50%;
+}
+
+.cursotattooimg img {
+    width: 49%
+}
+
+.clases {
+    display: flex;
+    padding: 0% 10px;
+    text-align: left;
+    margin: 30px;
+    border: 2px solid #660708;
+}
+.clase{
+    margin: 30px;
 }
 
 
-#testimonios p {
-    text-align: center;
-    font-style: italic;
-}
+/***MAIN INSUMOS***/
 
-#formulario {
-    text-align: center;
-}
-
-#insumos {
-    text-align: center;
-}
 
 /**FOOTER**/
 
 footer {
     text-align: center;
     font-size: 15px;
+    width: 100%;
+    height: 35vh;
     background-color: #000000;
     background-image: url(/Img/fondos/fondofooter5.jpg);
     background-position: right;
@@ -116,10 +227,14 @@ footer {
     color: var(--main-text-color)
 }
 
-footer ul {
-    text-align: center;
+footer p {
+    margin: 5px;
+    font-weight: 10;
+    font-style: normal;
+    font-size: 12px;
+    margin: 30px;
+    font-weight:bold ;
 }
-
 
 #mapa {
     text-align: center;
@@ -128,4 +243,3 @@ footer ul {
 #contacto {
     text-align: center;
 }
-
