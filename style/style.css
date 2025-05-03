@@ -5,7 +5,7 @@ propiedad: valor}
 /* Variables CSS*/
 :root {
     --main-color: #161a1d;
-    --main-color-secondary: #660708;
+    --main-color-secondary: #9e0306;
     --main-text-color: #b1a7a6;
     --main-text-light: #ba181b;
 }
@@ -21,10 +21,10 @@ propiedad: valor}
 
 body {
     font-family: "Marcellus", serif;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: bold;
     background-color: #161a1d;
-    background-image: url(/Img/fondos/fondodibujos2.jpg);
+    background-image: url(/Img/fondos/fondodibujos23.jpg);
     background-position: center;
     color: var(--main-text-color)
 }
@@ -32,34 +32,36 @@ body {
 /****HEADER****/
 
 header {
-    background-image: url('/Img/fondos/fondoheader.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
+    height: 160px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.logo img {
+    width: 150px;
 }
 
 header nav ul {
     list-style: none;
-    text-align: right;
+    display: flex;
+    flex-direction: row;
 }
 
 header nav ul li {
-    margin: 20px;
+    font-size: 20px;
+    margin: 10px 10px;
 }
 
 a {
     color: var(--main-text-color)
 }
 
-h1 {
-    font-family: "Marcellus", serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 60px;
-    text-align: center;
-    color: var(--main-color-secondary);
+.banner img {
+    width: 100%;
+    height: 55vh;
 }
 
 /***MAIN HOME***/
@@ -67,40 +69,49 @@ h1 {
     display: flex;
     align-items: center;
     text-align: left;
-    padding: 0% 10px;
+    margin: 5px;
 }
 
 #nuestro_estudio img {
-    width: 49%;
+    width: 50%;
 }
 
 .parrafo-estudioLeft {
     width: 50%;
     text-align: left;
+    margin: 15px;
 }
 
 .estudiofRight {
     width: 50%;
+    margin: 15px;
 }
 
 .parrafo-estudio {
     text-align: left;
     padding: 0% 10px;
-}
-
-h2 {
-    color: #660708;
-    font-size: 35px;
-    text-align: center;
-    text-decoration: underline;
     margin: 15px;
 }
 
+h1 {
+    color: var(--main-color-secondary);
+    margin: 15px;
+}
+
+h2 {
+    color: var(--main-color-secondary);
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 25px;
+}
+
 h3 {
-    color: #660708;
+    color: var(--main-color-secondary);
     font-size: 25px;
     text-align: center;
     text-decoration: underline;
+    margin: 25px;
 }
 
 #nuestro_estudio div {
@@ -111,7 +122,7 @@ h3 {
 
 #equipo {
     display: flex;
-    margin-top: 5%;
+    margin: 15px;
 }
 
 .equipof img {
@@ -141,6 +152,14 @@ h3 {
     text-align: center;
 }
 
+input {
+    background-color: #b1a7a6;
+}
+
+textarea {
+    background-color: #b1a7a6;
+}
+
 /***MAIN GALERIA***/
 
 #galeria {
@@ -153,25 +172,26 @@ h3 {
 }
 
 #ftatuajes {
-    padding: 0% 10px;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between
 }
 
 #ftatuajes img {
-    padding: 0% 10px;
+    padding: 10px 10px;
     width: 30%;
-    align-items: center;
-    justify-content: space-between
+
 }
 
 #fperforaciones {
-    padding: 0% 10px;
+    padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between
 }
 
 #fperforaciones img {
-    padding: 0% 10px;
+    padding: 10px 10px;
     width: 30%;
-    align-items: center;
-    justify-content: space-between
 }
 
 /***MAIN CURSOS***/
@@ -188,10 +208,16 @@ h3 {
 .cursotattoo {
     width: 50%;
     text-align: left;
+    margin: 15px;
+}
+
+.cursotattoo ul {
+    list-style: none;
 }
 
 .cursotattooimg {
     width: 50%;
+    margin: 15px;
 }
 
 .cursotattooimg img {
@@ -205,47 +231,102 @@ h3 {
     margin: 30px;
     border: 2px solid #660708;
 }
-.clase{
+
+.clase {
     margin: 30px;
 }
-.body_piercing{
+
+.clase p {
+    text-decoration: underline;
+}
+
+.ctattoo p {
+    margin: 15px;
+}
+
+.ctattoo ul {
+    margin: 15px;
+}
+
+.ctattoo li {
+    margin: 5px;
+}
+
+.body_piercing {
     display: flex;
 }
-.body_piercing img{
+
+.body_piercing img {
     width: 50%;
 }
-.piercingright{
+
+.piercingright {
     width: 50%;
+    margin: 15px;
 }
-.temarioleft{
+
+.temarioleft {
     width: 50%;
     text-align: left;
+    margin: 15px;
 }
 
 /***MAIN INSUMOS***/
-.insumos p{
-    text-align: center;
+
+.insumos_tatuadores {
+    display: flex;
+    margin: 15px;
 }
-.insumos img{
-    width: 25%;
+
+.insumos p {
+    text-align: center;
+    margin: 15px;
+}
+
+.insumos_tatuadores article {
     align-items: center;
+    margin: 5px;
+    border: 0.5px solid var(--main-color-secondary)
+}
+
+.insumos_tatuadores p {
+    text-align: center;
+    margin: 5px;
+}
+
+.insumos_tatuadores img {
+    width: 50%;
     justify-content: space-between
 }
 
-.insumos_tatuadores{
+.insumos_perforadores {
     display: flex;
-    margin-top: 5%;  
+    margin: 15px;
 }
-.insumos_tatuadores ul{
-    border: 2px solid #660708;
+
+.insumos_perforadores img {
+    width: 50%;
+    justify-content: space-between
 }
-.insumos_tatuadores li{
-    text-align: right;
+
+.insumos_perforadores p {
+    text-align: center;
+    margin: 5px;
 }
+
+.insumos_perforadores article {
+    align-items: center;
+    margin: 5px;
+    border: 0.5px solid var(--main-color-secondary)
+}
+
+
 /**FOOTER**/
 
 footer {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-size: 15px;
     width: 100%;
     height: 35vh;
@@ -260,9 +341,10 @@ footer p {
     margin: 5px;
     font-weight: 10;
     font-style: normal;
-    font-size: 12px;
+    font-size: 15px;
     margin: 30px;
-    font-weight:bold ;
+    font-weight: bold;
+    text-align: center;
 }
 
 #mapa {
@@ -271,4 +353,10 @@ footer p {
 
 #contacto {
     text-align: center;
+}
+
+.boton {
+    background-color: #660708;
+    border-radius: 8px;
+    padding: 5px 5px;
 }
