@@ -58,7 +58,8 @@ header nav ul li {
 a {
     color: var(--main-text-color)
 }
-.banner{
+
+.banner {
     background-color: #000000;
     width: 100%;
     height: 70vh;
@@ -66,10 +67,12 @@ a {
     flex-direction: row;
     justify-content: space-around
 }
-.img1{
+
+.img1 {
     width: 30%;
 }
-.img2{
+
+.img2 {
     width: 70%;
 }
 
@@ -104,15 +107,17 @@ a {
 
 h1 {
     color: var(--main-color-secondary);
-    margin: 15px;
+    margin: 30px;
+    padding: 10px;
 }
 
 h2 {
     color: var(--main-color-secondary);
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
     text-decoration: underline;
-    margin: 25px;
+    margin: 30px;
+    padding: 10px;
 }
 
 h3 {
@@ -120,7 +125,8 @@ h3 {
     font-size: 25px;
     text-align: center;
     text-decoration: underline;
-    margin: 25px;
+    margin: 30px;
+    padding: 10px;
 }
 
 #nuestro_estudio div {
@@ -131,16 +137,27 @@ h3 {
 
 #equipo {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 15px;
 }
 
-.equipof img {
-    width: 90%;
+#equipo div {
     align-items: center;
-    justify-content: space-between
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 7px 7px;
+    width: 480px;
+    height: 480px;
 }
 
-.equipof p {
+#equipo div img {
+    align-items: center;
+    width: 400px;
+    min-width: 400px;
+}
+
+#equipo div p {
     font-weight: 450;
     font-style: normal;
     font-size: 17px;
@@ -158,49 +175,51 @@ h3 {
 }
 
 #formulario form {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
+    margin: 15px;
 }
 
 input {
     background-color: #b1a7a6;
+    margin: 5px;
 }
 
 textarea {
     background-color: #b1a7a6;
+    margin: 5px;
 }
 
 /***MAIN GALERIA***/
-
-#galeria {
+.container {
     display: flex;
-    flex-direction: column;
-}
-
-.subtitulo {
-    text-align: left;
-}
-
-#ftatuajes {
-    padding: 10px 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 15px;
     align-items: center;
-    justify-content: space-between
 }
 
-#ftatuajes img {
-    padding: 10px 10px;
+.container img {
+    background-color: #660708;
     width: 30%;
-
+    min-width: 200px;
+    border: 1px solid
 }
 
-#fperforaciones {
-    padding: 10px 10px;
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 15px;
     align-items: center;
-    justify-content: space-between
 }
 
-#fperforaciones img {
-    padding: 10px 10px;
+.container2 img {
+    background-color: #660708;
     width: 30%;
+    min-width: 200px;
+    border: 1px solid
 }
 
 /***MAIN CURSOS***/
@@ -282,53 +301,68 @@ textarea {
 
 /***MAIN INSUMOS***/
 
-.insumos_tatuadores {
-    display: flex;
+.introinsumos p {
+    text-align: center;
+    padding: 0% 10px;
     margin: 15px;
 }
 
-.insumos p {
-    text-align: center;
-    margin: 15px;
+.insumos_tatuadores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
 }
 
 .insumos_tatuadores article {
     align-items: center;
-    margin: 5px;
-    border: 0.5px solid var(--main-color-secondary)
+    background-color: var(--main-color-secondary);
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 10px 10px;
+    width: 250px;
+    height: 440px;
 }
 
-.insumos_tatuadores p {
-    text-align: center;
-    margin: 5px;
-}
-
-.insumos_tatuadores img {
-    width: 50%;
+.insumos_tatuadores article img {
+    width: 90%;
+    min-width: 200px;
+    align-items: center;
     justify-content: space-between
+}
+
+.insumos_tatuadores article p {
+    text-align: center;
+    font-size: 17px;
 }
 
 .insumos_perforadores {
     display: flex;
-    margin: 15px;
-}
-
-.insumos_perforadores img {
-    width: 50%;
-    justify-content: space-between
-}
-
-.insumos_perforadores p {
-    text-align: center;
-    margin: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: center;
 }
 
 .insumos_perforadores article {
-    align-items: center;
-    margin: 5px;
-    border: 0.5px solid var(--main-color-secondary)
+    background-color: var(--main-color-secondary);
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 10px 10px;
+    width: 250px;
+    height: 440px;
 }
 
+.insumos_perforadores article img {
+    width: 30%;
+    min-width: 200px;
+    align-items: center;
+}
+
+.insumos_perforadores article p {
+    text-align: center;
+    font-size: 17px;
+}
 
 /**FOOTER**/
 
