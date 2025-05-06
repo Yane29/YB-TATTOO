@@ -24,7 +24,7 @@ body {
     font-size: 23px;
     font-weight: bold;
     background-color: #161a1d;
-    background-image: url(/Img/fondos/fondodibujos23.jpg);
+    background-image: url(../Img/fondos/fondodibujos23.jpg);
     background-position: center;
     color: var(--main-text-color)
 }
@@ -382,7 +382,7 @@ footer {
     width: 100%;
     height: 35vh;
     background-color: #000000;
-    background-image: url(/Img/fondos/fondofooter5.jpg);
+    background-image: url(../Img/fondos/fondofooter5.jpg);
     background-position: right;
     background-repeat: no-repeat;
     color: var(--main-text-color)
