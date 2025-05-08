@@ -21,7 +21,7 @@ propiedad: valor}
 
 body {
     font-family: "Marcellus", serif;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: bold;
     background-color: #161a1d;
     background-image: url(../Img/fondos/fondodibujos23.jpg);
@@ -32,7 +32,7 @@ body {
 /****HEADER****/
 
 header {
-    height: 130px;
+    height: 100px;
     background-color: #000000;
     display: flex;
     align-items: center;
@@ -43,7 +43,8 @@ header {
 }
 
 .logo img {
-    width: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 header nav ul {
@@ -53,7 +54,7 @@ header nav ul {
 }
 
 header nav ul li {
-    font-size: 20px;
+    font-size: 15px;
     margin: 10px 10px;
 }
 
@@ -69,19 +70,15 @@ a {
     flex-direction: row;
     justify-content: space-around
 }
-
+.banner img{
+    align-items: center;
+}
 .img1 {
     width: 30%;
 }
 
 .img2 {
     width: 70%;
-}
-
-.bannercursos {
-    background-color: #000000;
-    width: 100%;
-    height: 70vh;
 }
 
 /***MAIN HOME***/
@@ -117,11 +114,12 @@ h1 {
     color: var(--main-color-secondary);
     margin: 30px;
     padding: 10px;
+    font-size: 40px;
 }
 
 h2 {
     color: var(--main-color-secondary);
-    font-size: 40px;
+    font-size: 37px;
     text-align: center;
     text-decoration: underline;
     margin: 30px;
@@ -182,21 +180,44 @@ h3 {
     margin: 15px;
 }
 
-#formulario form {
+#formulario {
+    background-color: #660708;
+    border-radius: 1px solid;
+    width: 600px;
+    height: 400px;
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px
+}
+
+#formulario form {
     margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap
 }
 
 input {
     background-color: #b1a7a6;
-    margin: 5px;
+    margin: 10px;
+    width: 300px;
+    height: 30px;
 }
 
 textarea {
     background-color: #b1a7a6;
-    margin: 5px;
+    margin: 15px;
+    width: 550px;
+    height: 100px;
+}
+.boton{
+    font-family: "Marcellus", serif;
+    color: #b1a7a6;
+    width:80px;
+    height: 30px;
 }
 
 /***MAIN GALERIA***/
