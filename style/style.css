@@ -21,7 +21,7 @@ propiedad: valor}
 
 body {
     font-family: "Marcellus", serif;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     background-color: #161a1d;
     background-image: url(../Img/fondos/fondodibujos23.jpg);
@@ -32,7 +32,7 @@ body {
 /****HEADER****/
 
 header {
-    height: 100px;
+    height: 75px;
     background-color: #000000;
     display: flex;
     align-items: center;
@@ -47,6 +47,12 @@ header {
     height: 80px;
 }
 
+.logo {
+    width: 80px;
+    height: 80px;
+    align-items: center;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -56,6 +62,7 @@ header nav ul {
 header nav ul li {
     font-size: 15px;
     margin: 10px 10px;
+    font-size: 10px;
 }
 
 a {
@@ -70,9 +77,11 @@ a {
     flex-direction: row;
     justify-content: space-around
 }
-.banner img{
+
+.banner img {
     align-items: center;
 }
+
 .img1 {
     width: 30%;
 }
@@ -85,53 +94,54 @@ a {
 #nuestro_estudio {
     display: flex;
     align-items: center;
-    text-align: left;
     margin: 5px;
 }
 
 #nuestro_estudio img {
     width: 50%;
+    height: 50%;
 }
 
 .parrafo-estudioLeft {
     width: 50%;
     text-align: left;
-    margin: 15px;
+    margin: 10px;
+    padding: 5px 5px;
+}
+
+.parrafo-estudioLeft p {
+    margin: 3px;
+    padding: 5px 5px;
 }
 
 .estudiofRight {
     width: 50%;
-    margin: 15px;
-}
-
-.parrafo-estudio {
-    text-align: left;
-    padding: 0% 10px;
-    margin: 15px;
+    margin: 10px;
+    padding: 5px 5px;
 }
 
 h1 {
     color: var(--main-color-secondary);
-    margin: 30px;
+    margin: 25px;
     padding: 10px;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 h2 {
     color: var(--main-color-secondary);
-    font-size: 37px;
+    font-size: 30px;
     text-align: center;
     text-decoration: underline;
-    margin: 30px;
+    margin: 25px;
     padding: 10px;
 }
 
 h3 {
     color: var(--main-color-secondary);
     font-size: 25px;
-    text-align: center;
+    text-align: left;
     text-decoration: underline;
-    margin: 30px;
+    margin: 25px;
     padding: 10px;
 }
 
@@ -143,31 +153,30 @@ h3 {
 
 #equipo {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 15px;
 }
 
 #equipo div {
     align-items: center;
+    text-align: center;
     border-radius: 10px;
     margin: 10px 10px;
     padding: 7px 7px;
-    width: 480px;
-    height: 480px;
+    width: 300px
 }
 
 #equipo div img {
     align-items: center;
-    width: 400px;
-    min-width: 400px;
+    width: 30%;
+    min-width: 300px;
 }
 
 #equipo div p {
     font-weight: 450;
     font-style: normal;
     font-size: 17px;
-    text-align: center;
 }
 
 #testimonios {
@@ -181,10 +190,6 @@ h3 {
 }
 
 #formulario {
-    background-color: #660708;
-    border-radius: 1px solid;
-    width: 600px;
-    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,6 +198,10 @@ h3 {
 }
 
 #formulario form {
+    background-color: #660708;
+    border-radius: 1px solid;
+    width: 600px;
+    height: 400px;
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -213,10 +222,11 @@ textarea {
     width: 550px;
     height: 100px;
 }
-.boton{
+
+.boton {
     font-family: "Marcellus", serif;
     color: #b1a7a6;
-    width:80px;
+    width: 80px;
     height: 30px;
 }
 
@@ -282,19 +292,37 @@ textarea {
 }
 
 .clases {
-    display: flex;
+    margin: 15px;
     padding: 0% 10px;
     text-align: left;
-    margin: 30px;
-    border: 2px solid #660708;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
 }
 
 .clase {
-    margin: 30px;
+    background-color: var(--main-color-secondary);
+    align-items: center;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px 5px;
+    width: 200px;
+    height: 210px;
 }
 
 .clase p {
     text-decoration: underline;
+    text-align: center;
+    margin: 3px;
+}
+
+.clase ol {
+    margin: 5px;
+    padding: 5px 5px;
+}
+
+.clase li {
+    margin: 5px;
 }
 
 .ctattoo p {
@@ -393,6 +421,12 @@ textarea {
     font-size: 17px;
 }
 
+/***MAIN CONTACTO***/
+
+#contacto ul {
+    list-style: none;
+}
+
 /**FOOTER**/
 
 footer {
@@ -427,8 +461,13 @@ footer p {
     text-align: center;
 }
 
-.boton {
-    background-color: #660708;
-    border-radius: 8px;
-    padding: 5px 5px;
-}
+/*MEDIA QUERYS*/
+
+/*Vista desktop*/
+@media screen and (max-widt: 1024px) {}
+
+/*Vista tablet*/
+@media screen and (max-widt: 768px) {}
+
+/*Vista mobile*/
+@media screen and (max-widt: 425px) {}
