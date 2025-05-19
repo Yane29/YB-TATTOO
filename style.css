@@ -18,7 +18,6 @@ propiedad: valor}
 }
 
 /*****BODY*****/
-
 body {
   font-family: "Marcellus", serif;
   font-size: 15px;
@@ -30,7 +29,6 @@ body {
 }
 
 /****HEADER****/
-
 .navbar {
   width: 100%;
   height: 75px;
