@@ -76,6 +76,8 @@ body {
 
 .banner img {
     align-items: center;
+    width: 100%;
+    height: auto;
 }
 
 .img1 {
@@ -481,13 +483,34 @@ footer p {
 }
 
 /*MEDIA QUERYS*/
+ 
+header-gbl {
+    background-color: black;
+}
 
 /*Vista desktop*/
-@media screen and (max-widt: 1024px) {}
+@media screen and (max-widt: 1024px) {
+
+    header-gbl {
+        height: 50px;
+    }
+
+}
 
 /*Vista tablet*/
-@media screen and (max-widt: 768px) {}
+@media screen and (max-widt: 768px) {
+    header-gbl {
+        height: 30px;
+    }
+
+}
 
 /*Vista mobile*/
-@media screen and (max-widt: 425px) {}
+@media screen and (max-widt: 425px) {
+    header-gbl {
+        height: 20px;
+        width:auto;
+    }
+
+}
 
