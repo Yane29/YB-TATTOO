@@ -550,6 +550,16 @@ footer p {
     height: auto;
     margin: 5px;
   }
+  .tatuajesdescripcion {
+    flex-direction: column;
+  }
+  .cursotattooimg {
+    display: flex;
+    justify-content: center;
+  }
+  .cursotattoo {
+    width: 100%;
+  }
   .clases {
     flex-direction: column;
     align-items: center;
@@ -576,7 +586,7 @@ footer p {
   }
 }
 /*Vista mobile*/
-@media (max-width: 425px) {
+@media (max-width: 525px) {
   body {
     font-size: 14px;
   }
@@ -613,9 +623,19 @@ footer p {
   }
   .cursotattoo {
     width: 100%;
+    padding: 5px;
+  }
+  .cursotattoo ul {
+    padding: 5px;
+  }
+  .cursotattooimg {
+    width: 95%;
+    flex-direction: column;
+    align-items: center;
   }
   .temarioleft ul {
     width: 100%;
+    padding: 5px;
   }
   h2,
   h3 {
