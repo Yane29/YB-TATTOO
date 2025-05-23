@@ -31,11 +31,11 @@ body {
 
 /****HEADER****/
 
-.navbar {
+.navbar navbar-expand-lg {
     width: 100%;
-    height: 75px;
+    height: 75vh;
     background-color: #000000;
-    position: fixed;
+    position: relative;
 }
 
 .navbar-nav .nav-link.active {
@@ -79,10 +79,12 @@ body {
 
 .img1 {
     width: 30%;
+    height: auto;
 }
 
 .img2 {
     width: 70%;
+    height: auto;
 }
 
 /***MAIN HOME***/
@@ -487,7 +489,7 @@ footer p {
 
 
 .banner img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -593,6 +595,11 @@ footer p {
     h2,
     h3 {
         font-size: 22px;
+        text-align: center;
+    }
+
+    #testimonios p {
+        text-align: center;
     }
 
     #formulario input {
@@ -608,8 +615,60 @@ footer p {
         width: 80%;
     }
 
+    #nuestros_cursos {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ctattoo ul {
+        list-style: none;
+        padding-left: 0%;
+    }
+
+    .tatuajesdescripcion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cursotattoo {
+        width: 100%;
+    }
+
+    .body_piercing ul {
+        width: 100%;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+    }
+
     footer {
         font-size: 13px;
         height: auto;
     }
+}
+
+.navbar navbar-expand-lg {
+    background-color: #000000;
+    position: fixed;
+}
+
+div .container-fluid {
+    background-color: #000000;
+}
+
+#mapa {
+    align-items: center;
+
+    flex-direction:column nav {
+        width: 400px;
+        height: 450px;
+    }
+}
+
+element.style {
+    width: 400px;
+    height: 450px;
+    align-items: center;
 }

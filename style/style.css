@@ -29,11 +29,11 @@ body {
 }
 
 /****HEADER****/
-.navbar {
+.navbar navbar-expand-lg {
   width: 100%;
-  height: 75px;
+  height: 75vh;
   background-color: #000000;
-  position: fixed;
+  position: relative;
 }
 
 .navbar-nav .nav-link.active {
@@ -77,10 +77,12 @@ body {
 
 .img1 {
   width: 30%;
+  height: auto;
 }
 
 .img2 {
   width: 70%;
+  height: auto;
 }
 
 /***MAIN HOME***/
@@ -480,7 +482,7 @@ footer p {
 }
 
 .banner img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -492,118 +494,144 @@ footer p {
     height: auto;
     text-align: center;
   }
-
   .img1,
   .img2 {
     width: 100%;
   }
-
   #nuestro_estudio {
     flex-direction: column;
     text-align: center;
   }
-
   #nuestro_estudio img {
     width: 70%;
     height: auto;
   }
-
   .parrafo-estudioLeft,
   .estudiofRight {
     width: 90%;
   }
-
   .container img,
   .container2 img {
     width: 45%;
   }
-
   .body_piercing {
     flex-direction: column;
   }
-
   .piercingright,
   .temarioleft {
     width: 90%;
   }
-
   #formulario form {
     width: 90%;
     height: auto;
   }
-
   textarea {
     width: 90%;
   }
 }
-
 /*Vista tablet*/
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     height: auto;
   }
-
   .container img,
   .container2 img {
     width: 90%;
   }
-
   .clases {
     flex-direction: column;
     align-items: center;
   }
-
   .clase {
     width: 90%;
     text-align: center;
   }
-
   .insumos_tatuadores article,
   .insumos_perforadores article {
     width: 85%;
     height: auto;
   }
-
   #equipo {
     flex-direction: column;
     align-items: center;
   }
-
   #equipo div img {
     width: 80%;
   }
 }
-
 /*Vista mobile*/
 @media (max-width: 425px) {
   body {
     font-size: 14px;
   }
-
   h1,
   h2,
   h3 {
     font-size: 22px;
+    text-align: center;
   }
-
+  #testimonios p {
+    text-align: center;
+  }
   #formulario input {
     width: 90%;
   }
-
   #formulario textarea {
     width: 90%;
   }
-
   .insumos_tatuadores article img,
   .insumos_perforadores article img {
     width: 80%;
   }
-
+  #nuestros_cursos {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ctattoo ul {
+    list-style: none;
+    padding-left: 0%;
+  }
+  .tatuajesdescripcion {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cursotattoo {
+    width: 100%;
+  }
+  .body_piercing ul {
+    width: 100%;
+  }
+  h2,
+  h3 {
+    text-align: center;
+  }
   footer {
     font-size: 13px;
     height: auto;
   }
+}
+.navbar navbar-expand-lg {
+  background-color: #000000;
+  position: fixed;
+}
+
+div .container-fluid {
+  background-color: #000000;
+}
+
+#mapa {
+  align-items: center;
+}
+#mapa flex-direction:column nav {
+  width: 400px;
+  height: 450px;
+}
+
+element.style {
+  width: 400px;
+  height: 450px;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
