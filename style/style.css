@@ -477,8 +477,11 @@ footer p {
   text-align: center;
 }
 
-#contacto {
+#contacto ul {
   text-align: center;
+  width: 95%;
+  margin: 5px;
+  padding: 3px;
 }
 
 .banner img {
@@ -542,6 +545,11 @@ footer p {
   .container2 img {
     width: 90%;
   }
+  #nuestro_estudio img {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+  }
   .clases {
     flex-direction: column;
     align-items: center;
@@ -562,6 +570,9 @@ footer p {
   }
   #equipo div img {
     width: 80%;
+  }
+  #contacto ul {
+    text-align: center;
   }
 }
 /*Vista mobile*/
